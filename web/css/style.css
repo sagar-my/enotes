@@ -1,0 +1,32 @@
+.bg-custom{
+    background:  #ab47bc;
+}
+.navbar .nav-item .nav-link{
+    font-size: 20px;
+    color: white;
+}
+.navbar-custom .nav-item:hover .nav-link{
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+.div-color{
+    background-image: linear-gradient(to right top, #d61cd8, #7179ff, #00a1ff, #00b9f4, #43c7d2);
+    height:500px;
+}
+
+.dark-theme {
+         color: white;
+         background-color: rgb(26, 20, 20);
+      }
+      button {
+         width: 13rem;
+         height: 2rem;
+         font-size: 1.5rem;
+         background-color: aqua;
+         border: none;
+         border-radius: 12px;
+      }
+.form-group {
+
+}
