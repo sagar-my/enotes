@@ -20,6 +20,10 @@
         <servlet-name>NotesEditServlet</servlet-name>
         <servlet-class>com.DAO.NotesEditServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>deleteServlet</servlet-name>
+        <servlet-class>com.DAO.deleteServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>A</servlet-name>
         <url-pattern>/Userservlet</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>NotesEditServlet</servlet-name>
         <url-pattern>/NotesEditServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteServlet</servlet-name>
+        <url-pattern>/deleteServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

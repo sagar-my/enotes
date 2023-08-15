@@ -21,7 +21,7 @@
     </head>
     <body>
         <%@include file="all_component/navbar.jsp" %>
-       
+
         <div class="container-fluid back-img">
             <div class="text-center">
                 <h1 class="text-white"><i class="fa fa-book" aria-hidden="true"></i>

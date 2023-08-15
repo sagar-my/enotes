@@ -31,18 +31,28 @@
             .br{
                 border-radius: 13px;
             }
-            
+
         </style>
     </head>
     <body>
         <%@include file="all_component/navbar.jsp" %>
-        <%           
-        String msg = (String)session.getAttribute("updateMsg");
+        <%            String msg = (String) session.getAttribute("updateMsg");
             if (msg != null) {
         %>
         <div class="alert alert-success" role="alert"><%=msg%></div>
         <%
                 session.removeAttribute("updateMsg");
+            }
+        %>
+
+
+        <%
+            String wrongmsg = (String) session.getAttribute("wrongmsg");
+            if (wrongmsg != null) {
+        %>
+        <div class="alert alert-danger" role="alert"><%=wrongmsg%></div>
+        <%
+                session.removeAttribute("wrongmsg");
             }
         %>
         <div class="container-fluid bg-light">
@@ -62,7 +72,7 @@
                         <div class="card-body p-4">
                             <h5 class="card-title"><%= po.getTitle()%>
                             </h5>
-                            <p class="text-muted"><%= po.getContent()%></p>
+                            <p class="text-dark"><%= po.getContent()%></p>
                             <p>
                                 <b class="text-info"> Published By: <%= user3.getName()%> </b></br> <b class="text-info"></b>
                             </p>
@@ -70,7 +80,9 @@
                                 <b class="text-dark"> Published Date: <%= po.getPdate()%> </b></br> <b class="text-success"></b>
                             </p>
                             <div class="container text-center mt-2">
-                                <a herf="DeleteServlet?note_id=" class="btn btn-danger">Delete</a> 
+                                <a href="deleteServlet?note_id=<%=po.getId()%>"class="btn btn-danger">Delete</a>
+
+
                                 <a href="edit.jsp?note_id=<%=po.getId()%>"class="btn btn-primary">Edit</a>
                             </div>
                         </div>

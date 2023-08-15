@@ -13,7 +13,7 @@
 
                     <!-- Content -->
                     <h5 class="text-uppercase text-white"> Welcome </h5>
-                    <p class="text-white">Note: Any Problem Regarding Content Contact Sagar Chaudhary </p>
+                    <p class="text-white">Note: Any Problem Regarding Content Contact Sumit Sharma </p>
                     <p class="text-white">Java  Application Developer </p>
                 </div>
                 <!-- Grid column -->
@@ -27,7 +27,7 @@
                     <h5 class="text-uppercase text-white">Facebook</h5>
 
                     <a class="text-white mr-2" href="https://www.facebook.com/profile.php?id=100071574906839&mibextid=ZbWKwL"><i class="fa fa-facebook-square" aria-hidden="true"></i>
-                        Sagar Chaudhary</a>
+                        Sumit Sharma</a>
 
                 </div>
                 <!-- Grid column -->
@@ -39,7 +39,7 @@
                     <h5 class="text-uppercase text-white">Instagram</h5>
 
                     
-<a class="text-white mr-2" href="https://www.instagram.com/sagarchaudhary330/"><i class="fa fa-instagram" aria-hidden="true"></i> Sagar Chaudhary</a>
+<a class="text-white mr-2" href="https://www.instagram.com/sagarchaudhary330/"><i class="fa fa-instagram" aria-hidden="true"></i> Sumit Sharma</a>
                 </div>
                 <!-- Grid column -->
 

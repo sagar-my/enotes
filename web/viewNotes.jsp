@@ -6,8 +6,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Admin Home Page</title>
+        <title>View Notes  Page</title>
         <%@include file="all_component/allcss.jsp"%>
+      
+        <style type="text/css">
+            .back-img{
+                background-color: #E0E0E0; 
+                width: 100%;
+                height: 80vh;
+                background-size: cover;
+            }
+            .br{
+                border-radius: 13px;
+            }
+
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-custom navbar-custom">
@@ -16,39 +29,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="home.jsp"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
-                    </li>
-
-                </ul>
-                <a href="home.jsp" class="btn btn-light my-2 my-sm-0" type="submit"><i class="fa fa-lock" aria-hidden="true"></i> Admin Logout</a>
+           
 
         </nav>
         <div class="container-fluid pb-2">
 
-           
-            
             <div class="card bg-light pt-4 py-3">
                 <div class="card-body text-center">
 
                     <h1>
-                        Welcome....! Admin...
+                       View All Notes......
                     </h1>
 
                 </div>
                 <div>
-                   
-               
-                            <h3>Details of Users</h3>
+                  
                             <div class="container-fluid text-center">
                                 <table class="table table-striped mt-4">
                                     <thead class="bg-dark text-white">
                                         <tr>
-                                            <th scope="col">User_Id</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Email</th>
+                                            
                                             
                                         </tr>
                                         <%
@@ -56,7 +56,7 @@
 
 Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/enotes","root","");
 
-PreparedStatement pst=con.prepareStatement("select * from user_detail");
+PreparedStatement pst=con.prepareStatement("select * from post");
 
 
 ResultSet rs=pst.executeQuery();

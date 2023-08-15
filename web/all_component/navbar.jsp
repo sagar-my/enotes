@@ -18,6 +18,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="ShowNotes.jsp"><i class="fa fa-address-book-o" aria-hidden="true"></i> Show Notes</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="viewNotes.jsp"><i class="fa fa-address-book-o" aria-hidden="true"></i> View Notes </a>
+            </li>
         </ul>
         <%
             UserDetails user = (UserDetails) session.getAttribute("userD");

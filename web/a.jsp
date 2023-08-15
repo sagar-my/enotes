@@ -19,19 +19,21 @@
 <%@page import ="javax.servlet.http.HttpServletRequest" %>
 <%@page import ="javax.servlet.http.HttpSession" %>
 <%
-String admin_email=request.getParameter("admin_email");
-String admin_password=request.getParameter("admin_password");
+    String admin_email = request.getParameter("admin_email");
+    String admin_password = request.getParameter("admin_password");
 //   admin ad=new admin();
 //    ad.setEmail(admin_email);
 //    ad.setPassword(admin_password);
-    
-    
-  if(admin_email.equals("sagar.chaudhary25008@gmail.com")&& admin_password.equals("sagar@123")){
-			 
-			request.getRequestDispatcher("admin_home.jsp").include(request, response);
-		}else{
-			out.print("InValid Id or PAssword");
-			
-		}
-		
-   %>
+
+    if (admin_email.equals("sagar.chaudhary25008@gmail.com") && admin_password.equals("sagar@123")) {
+
+        request.getRequestDispatcher("admin_home.jsp").forward(request, response);
+    } else {
+        
+
+        request.getRequestDispatcher("admin.jsp").include(request, response);
+     
+
+    }
+
+%>

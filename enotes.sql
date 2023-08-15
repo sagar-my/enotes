@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 24, 2023 at 10:05 AM
+-- Generation Time: Aug 10, 2023 at 05:48 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `post` (
   `id` int(11) NOT NULL,
   `Title` varchar(20) NOT NULL,
-  `content` varchar(200) NOT NULL,
+  `content` varchar(2000) NOT NULL,
   `date` timestamp(6) NOT NULL DEFAULT current_timestamp(6),
   `uid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -40,13 +40,7 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`id`, `Title`, `content`, `date`, `uid`) VALUES
-(1, 'what is java ', 'java is a language ', '2023-06-28 08:38:03.055271', 1),
-(2, 'what isc', 'c is a Programming language. ', '2023-06-28 08:38:13.765646', 1),
-(3, 'what is c ', 'Programming lanuguage ', '2023-06-28 09:22:26.607585', 2),
-(4, 'what is python', 'python is a programming language', '2023-06-29 06:57:07.789862', 1),
-(5, 'what is react js', 'React js is used for front-end development language.', '2023-06-29 07:07:41.580277', 1),
-(6, 'what  is node js', 'node js is mern technology ', '2023-07-22 05:53:14.297564', 1),
-(7, 'C++', 'C++ is a computer programming Language Using c++ we can write wide variety of program', '2023-07-24 08:04:02.098953', 3);
+(1, 'What is JAVA ', 'Java Is a programming Language. ', '2023-08-08 02:53:57.465495', 1);
 
 -- --------------------------------------------------------
 
@@ -68,7 +62,8 @@ CREATE TABLE `user_detail` (
 INSERT INTO `user_detail` (`Id`, `Fullname`, `email`, `password`) VALUES
 (1, 'Sagar Chaudhary', 'sagar.chaudhary25008@gmail.com', 'sagar@123'),
 (2, 'Ashish', 'rahul@123.com', '12345'),
-(3, 'Ashok', 'asa@yahoo.com', 'admimadmin');
+(3, 'Ashok', 'asa@yahoo.com', 'admimadmin'),
+(4, 'Sumit Sharma', 'sumit@yahoo.com', 'flower12@');
 
 --
 -- Indexes for dumped tables
@@ -95,13 +90,13 @@ ALTER TABLE `user_detail`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user_detail`
 --
 ALTER TABLE `user_detail`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

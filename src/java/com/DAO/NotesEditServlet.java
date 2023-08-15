@@ -13,7 +13,7 @@ public class NotesEditServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            Integer noteid = Integer.parseInt(request.getParameter("noteid"));
+            Integer noteid = Integer.parseInt(request.getParameter("note_id"));
             String Title = request.getParameter("title");
             String Content = request.getParameter("content");
 PostDAO dao=new PostDAO(Dbconnect.getconn());

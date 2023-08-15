@@ -17,9 +17,6 @@
                             <i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
                             <h4>Registration</h4>
                         </div>
-
-
-
                         <%
                             String regmsg = (String) session.getAttribute("reg-sucess");
                             if (regmsg != null) {%>
@@ -30,7 +27,6 @@
                         session.removeAttribute("reg-sucess");
                             }
                         %>
-
 
                         <%
                             String failedmsg = (String) session.getAttribute("failed-msg");
